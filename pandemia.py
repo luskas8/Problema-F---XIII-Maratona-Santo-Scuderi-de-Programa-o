@@ -31,7 +31,6 @@ def main():
 
     for infectado in infectados:
         for i in infectado:
-            # print(infectado)
             if (i): infectadosTotal += 1
 
     print(infectadosTotal)
