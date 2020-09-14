@@ -14,7 +14,7 @@ def main():
     quadro = []
 
     for i in range(nLinha):
-            # Pegando dados de resistência de casa pessoa
+            # Pegando dados de resistência de cada pessoa
             quadro.append([int(j) for j in input().split()])
     #end for i
 
@@ -31,7 +31,6 @@ def main():
 
     for infectado in infectados:
         for i in infectado:
-            # print(infectado)
             if (i): infectadosTotal += 1
 
     print(infectadosTotal)
@@ -41,7 +40,7 @@ def main():
 def dentroLinhas(linhas, currentL): return (currentL < linhas and currentL >= 0)
 
 # Verifica se está dentro do limite de colunas do quadro
-def dentroColunas(coluna, currentC):return (currentC < coluna and currentC >= 0)
+def dentroColunas(coluna, currentC): return (currentC < coluna and currentC >= 0)
 
 # Função para infectar todos em volta
 '''
